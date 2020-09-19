@@ -51,7 +51,11 @@
             </i>
 
             <div class="childDir">
-              <div id="fileHome" class="item treeLine treeLineActive" onclick="showPage('home')">
+              <div
+                id="fileHome"
+                class="item treeLine treeLineActive"
+                onclick="showPage('home')"
+              >
                 <i class="fab fa-markdown">
                   <span class="sansSerifFont"> home.md</span></i
                 >
@@ -63,7 +67,11 @@
                 >
               </div>
 
-              <div id="fileContact" class="item treeLine" onclick="showPage('contact')">
+              <div
+                id="fileContact"
+                class="item treeLine"
+                onclick="showPage('contact')"
+              >
                 <i class="fab fa-markdown">
                   <span class="sansSerifFont">contact.md</span></i
                 >
@@ -81,18 +89,20 @@
             >
           </div>
           <div id="tabBio" class="page" onclick="showPage('bio')">
-            <i class="fab fa-markdown" >
+            <i class="fab fa-markdown">
               <span class="sansSerifFont"> bio</span></i
             >
           </div>
           <div id="tabContact" class="page" onclick="showPage('contact')">
-            <i class="fab fa-markdown" >
+            <i class="fab fa-markdown">
               <span class="sansSerifFont"> contact</span></i
             >
           </div>
         </div>
+
+        <!-- HOME CONTENT -->
         <div id="pageHome" class="files">
-          <h1>Great Scott, It works!</h1>
+          <h1>127.0.0.1, sweet 127.0.0.1.!</h1>
           <!-- Quote 1 -->
           <div class="quote">
             <div class="quoteItself">
@@ -100,15 +110,18 @@
             </div>
             <div class="quotePerson">– Chris Heilmann</div>
           </div>
-
+          <!-- /Quote -->
           <div class="whoIAm bg1">
             <div class="imgOfMyself">
               <img src="img/myself.jpg" alt="Myself as wizard" />
             </div>
             <div class="textAboutMyself">
-              Hi, my name is <b>Rafa Linares Molina</b> and I love everything about new technologies and how the stuff works. 
-              Since i was very young I can remember tearing apart all the electronics my hands could grab to check the internals. 
-              But after breaking more stuff than ever repaired I decided to start my career as full stack developer. 
+              Hi, my name is <b>Rafa Linares Molina</b> and I love everything
+              about new technologies and how the stuff works. Since i was very
+              young I can remember tearing apart all the electronics my hands
+              could grab to check the internals. But after breaking more stuff
+              than ever repaired I decided to start my career as full stack
+              developer.
               <br />
               I played with few tecnologies in the past:
               <ul>
@@ -141,7 +154,7 @@
               </ul>
             </div>
           </div>
-          <!-- Quote 2 -->
+          <!-- Quote -->
           <div class="quote">
             <div class="quoteItself">
               “Any fool can write code that a computer can understand. Good
@@ -149,7 +162,7 @@
             </div>
             <div class="quotePerson">– Martin Fowler</div>
           </div>
-
+          <!-- /Quote -->
           <div class="whoIAm bg2">
             <div class="imgOfMyself">
               <img src="img/rbp4.jpg" alt="Myself as wizard" />
@@ -184,8 +197,89 @@
             </div>
           </div>
         </div>
-        <div id="pageBio" class="files">BIO!</div>
-        <div id="pageContact" class="files">CONTACT!</div>
+
+        <!-- BIO CONTENT -->
+        <div id="pageBio" class="files">
+          <h1>Let me introduce myself...</h1>
+
+          <!-- Quote -->
+          <div class="quote">
+            <div class="quoteItself">
+              “Experience is the name everyone gives to their mistakes.”
+            </div>
+            <div class="quotePerson">– Oscar Wilde</div>
+          </div>
+          <!-- /Quote -->
+          <div class="whoIAm bg2">
+            <div class="imgOfMyself">
+              <img src="img/myself2.jpg" alt="Myself as wizard" />
+            </div>
+            <div class="textAboutMyself">
+              Well, here we are. Now I supouse I could talk about my whereabouts
+              in life...
+              <br />
+              <ul>
+                <li>
+                  I am from Valencia, I was born around the 90' (I am almost
+                  older than the internet)
+                </li>
+                <li>
+                  I am person with quite a few interest regarding any
+                  technological issue. I try to follow the news, stay in touch
+                  with cybersecurity (although this is from a point of view of
+                  an amateur) and in my spare time I rarely dennay a beer with
+                  my friends, or to a table top role-playing game.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT CONTENT -->
+        <div id="pageContact" class="files">
+          <h1>Contact me!</h1>
+
+          <!-- Quote -->
+          <div class="quote">
+            <div class="quoteItself">
+              “Simplicity is the soul of efficiency.”
+            </div>
+            <div class="quotePerson">– Austin Freeman</div>
+          </div>
+          <!-- /Quote -->
+
+          <div class="whoIAm bg2">
+            <div class="imgOfMyself">
+              <img src="img/myself3.jpg" alt="Myself as wizard" />
+            </div>
+            <div class="textAboutMyself">
+              Just call me and give me a job!
+              <br />
+              Contact me throug:
+              <ul class="contactInfo">
+                <li>
+                  <a href=""> <i class="fas fa-mobile-alt"><span class="sansSerifFont"> 666 666 666</span> </i> </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fas fa-envelope sansSerifFont"><span class="sansSerifFont"> someMail@gmail.com</span> </i></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://es.linkedin.com/in/rafael-ivan-linares-molina"
+                    ><i class="fab fa-linkedin sansSerifFont"><span class="sansSerifFont"> LikedIn</span> </i></a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/RafaLinaresMolina"
+                    ><i class="fab fa-github-alt sansSerifFont"><span class="sansSerifFont"> GitHub</span> </i></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer"></div>
