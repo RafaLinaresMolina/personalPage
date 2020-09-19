@@ -51,19 +51,19 @@
             </i>
 
             <div class="childDir">
-              <div class="item treeLine treeLineActive">
+              <div id="fileHome" class="item treeLine treeLineActive" onclick="showPage('home')">
                 <i class="fab fa-markdown">
                   <span class="sansSerifFont"> home.md</span></i
                 >
               </div>
 
-              <div class="item treeLine">
+              <div id="fileBio" class="item treeLine" onclick="showPage('bio')">
                 <i class="fab fa-markdown">
                   <span class="sansSerifFont">bio.md</span></i
                 >
               </div>
 
-              <div class="item treeLine">
+              <div id="fileContact" class="item treeLine" onclick="showPage('contact')">
                 <i class="fab fa-markdown">
                   <span class="sansSerifFont">contact.md</span></i
                 >
@@ -75,23 +75,23 @@
       <!-- content or open files -->
       <div class="openFiles">
         <div class="tabs">
-          <div class="page pageActive">
+          <div id="tabHome" class="page pageActive" onclick="showPage('home')">
             <i class="fab fa-markdown">
               <span class="sansSerifFont"> home</span></i
             >
           </div>
-          <div class="page">
-            <i class="fab fa-markdown">
+          <div id="tabBio" class="page" onclick="showPage('bio')">
+            <i class="fab fa-markdown" >
               <span class="sansSerifFont"> bio</span></i
             >
           </div>
-          <div class="page">
-            <i class="fab fa-markdown">
+          <div id="tabContact" class="page" onclick="showPage('contact')">
+            <i class="fab fa-markdown" >
               <span class="sansSerifFont"> contact</span></i
             >
           </div>
         </div>
-        <div class="files">
+        <div id="pageHome" class="files">
           <h1>Great Scott, It works!</h1>
           <!-- Quote 1 -->
           <div class="quote">
@@ -184,7 +184,8 @@
             </div>
           </div>
         </div>
-        <div class="files hiddenFile">this is another a file!</div>
+        <div id="pageBio" class="files">BIO!</div>
+        <div id="pageContact" class="files">CONTACT!</div>
       </div>
     </div>
     <div class="footer"></div>
@@ -194,6 +195,6 @@
       src="https://kit.fontawesome.com/4512bfa85c.js"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="js/app.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
