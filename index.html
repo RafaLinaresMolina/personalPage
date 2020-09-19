@@ -7,96 +7,195 @@
     <title>Rafa Linares Molina - Fullstack</title>
   </head>
   <body>
-    <div class="cabecera"></div>
-    <div class="content">
-      <div class="bioInfo">
-        <h2>Hi, My name is Rafa!</h2>
-        <img class="innerImage" src="" alt="" />
-        <div class="innerContent">
-          I am a developer with big hopes and dreams. I love create things and
-          being part of teams who make things happen. 
-          > under construction <
+    <div class="ideGlobal">
+      <!-- left menu & directory tree -->
+      <div class="sidebar">
+        <div class="menu">
+          <!-- upper menu -->
+          <div class="top">
+            <i class="menuItem menuItemActive far fa-copy"></i>
+            <a href="https://es.linkedin.com/in/rafael-ivan-linares-molina"
+              ><i class="menuItem fas fa-search tooltip">
+                <span class="tooltiptext sansSerifFont">
+                  Find me on LinkedIn</span
+                ></i
+              >
+            </a>
+            <a href="https://github.com/"
+              ><i class="menuItem fas fa-code-branch tooltip">
+                <span class="tooltiptext sansSerifFont">
+                  Watch a bit of code</span
+                ></i
+              ></a
+            >
+          </div>
+
+          <!-- bottom menu -->
+          <div class="bottom">
+            <i class="menuItem toBottom fas fa-cog tooltip">
+              <span class="tooltiptext sansSerifFont"> Toogle theme </span></i
+            >
+          </div>
+        </div>
+
+        <!-- directory tree -->
+        <div class="parentDir">
+          <i class="dirTitle fas fa-chevron-down">
+            <span class="sansSerifFont">PERSONALPAGE</span></i
+          >
+          <div class="documentsTree">
+            <i class="fas fa-chevron-down">
+              <i class="far fa-folder-open">
+                <span class="sansSerifFont">project</span>
+              </i>
+            </i>
+
+            <div class="childDir">
+              <div class="item treeLine">
+                <i class="fab fa-markdown">
+                  <span class="sansSerifFont"> home.md</span></i
+                >
+              </div>
+
+              <div class="item treeLine treeLineActive">
+                <i class="fab fa-markdown">
+                  <span class="sansSerifFont">bio.md</span></i
+                >
+              </div>
+
+              <div class="item treeLine">
+                <i class="fab fa-markdown">
+                  <span class="sansSerifFont">contact.md</span></i
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="workingContent">
-        <h2>The road so far...</h2>
-        <div class="innerContent">
-            <div class="workplace">
-                <h3>Mytra Control S.L.</h3>
-
-                <p>
-                   In this particular place I worked for two years as:
-                   <ul>
-                       <li>Backend developer with nodejs</li>
-                       <li>Android developer with native android for smartwatches</li>
-                       <li>Started the adventure of cloud with azure and aws</li>
-                       <li>Being an active part of a SCRUM team</li>
-                   </ul>
-
-                   while also:
-                   <ul>
-                       <li>Improved a lot of stuff about agile philosophy and SCRUM</li>
-                    </ul>
-                </p>
-
-            </div>
-            <div class="workplace">
-                <h3>SRG Global Lliria</h3>
-
-                <p>
-                    Working as an external consultant for a whole year my tasks where:
-                    <ul>
-                        <li>Learned how to really do SCRUM</li>
-                        <li>The importance of the well use of Git and Gitflow</li>
-                        <li>Improved my skills with Microsoft SQL Server</li>
-                        <li>worked with delphi on legacy code</li>
-                    </ul>
-                    And this experience helped myself to improve myself as a profesial and to not be scared of legacy code.
-                 </p>
-            </div>
-            
-            <div class="workplace">
-                <h3>Capgemini</h3>
-                <p>
-                    Working as Junior Consultant for two year I worked and learned:
-                    <ul>
-                        <li>How to work with SCRUM</li>
-                        <li>The importance of the correct communication with my team</li>
-                        <li>Improved my skills with Oracle SQL Server</li>
-                        <li>The needing of test the code for avoiding future errors and have more control of the workflow</li>
-                        <li>Worked with C on batch scripts</li>
-                    </ul>
-                 </p>
-            </div>
-            <div class="workplace">
-                <h3>Gnommostudios S.L</h3>
-                <p>
-                    As my first job:
-                    <ul>
-                        <li>I learned how to give presentations for clients</li>
-                        <li>Improved my knowledge of android studio and android apps</li>
-                        <li>Improved my skills with MySQL Server</li>
-                        <li>The importance of a well organized schedule work</li>
-                        <li>start knowing nodejs and Angular</li>
-                    </ul>
-                    And I have a very good memories from the Gnommostudios team and the CTO.
-                 </p>
-            </div>
+      <!-- content or open files -->
+      <div class="openFiles">
+        <div class="tabs">
+          <div class="page">
+            <i class="fab fa-markdown">
+              <span class="sansSerifFont"> Preview home.md</span></i
+            >
+          </div>
+          <div class="page pageActive">
+            <i class="fab fa-markdown">
+              <span class="sansSerifFont">Preview bio.md</span></i
+            >
+          </div>
+          <div class="page">
+            <i class="fab fa-markdown">
+              <span class="sansSerifFont">Preview bio.md</span></i
+            >
+          </div>
         </div>
-      </div>
-      <div class="studiesContent">
-        <h2>Where I was at the begining</h2>
-        > under construction <
-        <div class="innerContent"></div>
-      </div>
-      <div class="studiesContent">
-        <h2>Things i like!</h2>
-        > under construction <
-        <div class="innerContent"></div>
+        <div class="files">
+          <h1>Great Scott, It works!</h1>
+          <!-- Quote 1 -->
+          <div class="quote">
+            <div class="quoteItself">
+              “Java is to JavaScript what car is to Carpet.”
+            </div>
+            <div class="quotePerson">– Chris Heilmann</div>
+          </div>
+
+          <div class="whoIAm bg1">
+            <div class="imgOfMyself">
+              <img src="img/myself.jpg" alt="Myself as wizard" />
+            </div>
+            <div class="textAboutMyself">
+              Hi, my name is <b>Rafa Linares Molina</b> and I love everithing
+              about new technologies and how the stuff work. Since very young I
+              can remember tearing apart all the elctronics my hands could grab
+              to check the internals. But after break more stuff than ever
+              repaired I decided to start my career as full stack developer.
+              <br />
+              I played with few tecnologies in the past:
+              <ul>
+                <li>HTML5 & CSS3</li>
+                <li>NODE js</li>
+                <ul>
+                  <li>express</li>
+                </ul>
+                <li>Java</li>
+                <ul>
+                  <li>spring boot (a long time ago)</li>
+                </ul>
+                <li>Native Android</li>
+                <ul>
+                  <li>working with bluetooth beacons</li>
+                </ul>
+                <li>Python (barely)</li>
+                <li>Angular (ver 1, a long time ago, in a galaxy far away)</li>
+                <li>Data Bases</li>
+                <ul>
+                  <li>Design of relational databases</li>
+                  <li>SQL: MySQL, Oracle SQL Server, Microsoft SQL Server</li>
+                </ul>
+                <li>Versioning</li>
+                <ul>
+                  <li>Git (and GitFlow)</li>
+                  <li>Subversion</li>
+                  <li>Clearcase (never more)</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <!-- Quote 2 -->
+          <div class="quote">
+            <div class="quoteItself">
+              “Any fool can write code that a computer can understand. Good
+              programmers write code that humans can understand.”
+            </div>
+            <div class="quotePerson">– Martin Fowler</div>
+          </div>
+
+          <div class="whoIAm bg2">
+            <div class="imgOfMyself">
+              <img src="img/rbp4.jpg" alt="Myself as wizard" />
+            </div>
+            <div class="textAboutMyself">
+              But with developing software came the responsability to mantain
+              it. I am a enthusiast of agile philosophy and SCRUM framework. For
+              me is one of the fundamentals nowdays to produce a quality
+              product.
+              <br />
+              Things i plan to improve:
+              <ul>
+                <li>Cloud services</li>
+                <ul>
+                  <li>I recently worked with Azure and a bit with aws</li>
+                </ul>
+                <li>Better understanding of SCRUM</li>
+                <li>Better practices when working on projects</li>
+                <ul>
+                  <li>Clean code</li>
+                </ul>
+                <li>Testing (and more testing)</li>
+                <li>
+                  Pair programming (two people catch bugs fastest than one)
+                </li>
+                <li>FrontEnd</li>
+                <ul>
+                  <li>React, React native</li>
+                  <li>Angular (wich version you say they are now?)</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="files hiddenFile">this is another a file!</div>
       </div>
     </div>
     <div class="footer"></div>
+
     <!-- Javascript -->
+    <script
+      src="https://kit.fontawesome.com/4512bfa85c.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="js/app.js"></script>
   </body>
 </html>

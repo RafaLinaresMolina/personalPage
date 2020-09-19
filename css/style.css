@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-flow: row;
+  position: fixed;
+  height: 100%;
+  margin-right: 30em;
+}
+
+.ideGlobal {
+  position: absolute;
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  color: lightgray;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(90, 78, 78);
+}
+
+.menu {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 3.2em;
+  height: 100%;
+  background-color: rgb(61, 61, 61);
+}
+
+.parentDir {
+  display: flex;
+  flex-flow: column;
+  width: 13em;
+  background-color: rgb(41, 41, 41);
+}
+
+.childDir {
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(41, 41, 41);
+  margin-left: 0.5em;
+}
+
+.openFiles {
+  margin-left: 16.2em;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+  z-index: 1;
+}
+
+.tabs {
+  display: flex;
+  flex-flow: row;
+  background-color: rgb(46, 46, 46);
+  position: fixed;
+  width: 100%;
+}
+
+.page {
+  display: flex;
+  background-color: rgb(99, 99, 99);
+  width: auto;
+  align-content: flex-start;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 2em;
+  margin-left: 0.1em;
+}
+
+.pageActive {
+  background-color: rgb(32, 32, 32);
+}
+
+.openFiles {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  background-color: rgb(32, 32, 32);
+}
+
+.hiddenFile {
+  display: none;
+}
+
+.menuItem {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: rgb(105, 104, 104);
+}
+
+.menuItem:hover {
+  color: whitesmoke;
+}
+
+.menuItemActive {
+  width: 100%;
+  color: whitesmoke;
+  border-left: 0.15em solid;
+}
+
+.bottomMenu {
+  display: flex;
+  flex-flow: column;
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+}
+
+.dirTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  font-size: 0.9em;
+}
+
+.sansSerifFont {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.documentsTree {
+  display: flex;
+  flex-flow: column;
+  margin-left: 2em;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  padding-top: 0.1em;
+  padding-left: 1em;
+  height: 1.5em;
+}
+
+.treeLine {
+  border-left: 0.2px solid lightgray;
+  display: flex;
+  flex-flow: column;
+  height: auto;
+  justify-content: flex-end;
+}
+
+.treeLine:hover {
+  background-color: rgb(99, 99, 99);
+}
+
+.treeLineActive {
+  background-color: rgb(47, 27, 133);
+  pointer-events: none;
+}
+
+.innerDirTree {
+  display: flex;
+  flex-flow: column;
+}
+
+.top {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.bottom {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+}
+
+.files {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  overflow-y: scroll;
+  scrollbar-color: rgb(53, 53, 53) rgb(32, 32, 32);
+  scrollbar-width: thin;
+}
+
+.whoIAm {
+  border-radius: 0.7em;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  height: auto;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 2em;
+}
+
+.bg1 {
+  background-image: url("../img/pixels.jpg");
+  background-size: cover;
+}
+
+.bg2 {
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+}
+
+.whoIAm img {
+  display: flex;
+  height: 15em;
+  border-radius: 50%;
+  border: 6px outset #1c6ea4;
+}
+
+.textAboutMyself {
+  margin-left: 2em;
+  justify-items: center;
+  background-color: rgba(49, 49, 49, 0.8);
+  padding: 2em;
+}
+
+.quote {
+  width: fit-content;
+  border-radius: 0.7em;
+  background-color: rgba(49, 49, 49, 0.5);
+  padding: 1em;
+  display: flex;
+  flex-flow: column;
+  width: auto;
+  margin: 2em;
+}
+
+.quoteItself {
+  width: fit-content;
+  font-style: italic;
+}
+
+.quotePerson {
+  width: fit-content;
+  font-weight: bold;
+}
+
+h1 {
+  border-bottom: 1px outset whitesmoke;
+}
+
+/* stupid chrome and stupid webkit */
+::-webkit-scrollbar {
+  background: rgb(32, 32, 32);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(53, 53, 53);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgb(32, 32, 32);
+}
+
+/*  */
+/* Tooltip container */
+
+
+/* Tooltip text */
+.tooltiptext {
+  visibility: hidden;
+  width: 20em;
+  font-size: 0.5em;
+  background-color: rgb(32, 32, 32);
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: absolute;
+  z-index: 2;
+  border-radius: 0em 1em 1em 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  z-index: 2;
+}
+
+a {
+    display: block;
+    width: 100%;
+}
