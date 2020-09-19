@@ -181,9 +181,7 @@ body {
 
 .files {
   margin-left: 1em;
-  margin-right: 1em;
   margin-top: 2em;
-  margin-bottom: 2em;
   overflow-y: scroll;
   scrollbar-color: rgb(53, 53, 53) rgb(32, 32, 32);
   scrollbar-width: thin;
@@ -222,6 +220,7 @@ body {
   margin-left: 2em;
   justify-items: center;
   background-color: rgba(49, 49, 49, 0.8);
+  border-radius: 0.7em;
   padding: 2em;
 }
 
@@ -266,7 +265,6 @@ h1 {
 /*  */
 /* Tooltip container */
 
-
 /* Tooltip text */
 .tooltiptext {
   visibility: hidden;
@@ -291,6 +289,74 @@ h1 {
 }
 
 a {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+  .whoIAm {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .textAboutMyself{
+    margin-left: 0em;
+  }
+
+  .imgOfMyself{
+    margin-left: 0em;
+  }
+
+  .whoIAm img {
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .parentDir{
+    display: none;
+  }
+
+  .openFiles{
+    margin-left: 3.2em;
+  }
+
+  .whoIAm{
+    margin-left: 0em;
+    padding-left: 0em;
+  }
+
+  .textAboutMyself{
+    margin-left: 2em;
+    margin-bottom: 2em;
+  }
+
+  .imgOfMyself{
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .whoIAm{
+    margin-left: 0em;
+    padding: 0em;
+  }
+
+  .textAboutMyself{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .imgOfMyself{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .whoIAm img {
+    height: 10em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
 }
