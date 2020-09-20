@@ -218,11 +218,28 @@ body {
   background-size: cover;
 }
 
+
+
+.infoCard .document > .imageCert {
+  all: unset;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.infoCard .document {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+}
+
 .infoCard img {
   display: flex;
   height: 15em;
   border-radius: 50%;
   border: 6px outset #1c6ea4;
+  justify-content: center;
 }
 
 .cardText {
@@ -307,13 +324,8 @@ h1 {
   position: absolute;
   z-index: 2;
   border-radius: 0em 1em 1em 1em;
-  margin-top: 1em;
   margin-left: 1em;
   border: 0.15em solid;
-}
-
-img {
-  background-color: whitesmoke;
 }
 
 h3 a{
@@ -332,6 +344,8 @@ a {
   width: 100%;
   cursor: default;
 }
+
+
 
 @media only screen and (max-width: 1120px) {
   .infoCard {
