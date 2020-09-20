@@ -340,6 +340,7 @@ a {
   }
 
   .cardText{
+    width: 95%;
     margin-left: 0em;
   }
 
@@ -368,7 +369,7 @@ a {
 
   .cardText{
     margin-left: 2em;
-    margin-bottom: 0em;
+    width: 88%;
   }
 
   .imageOnCard{
@@ -387,6 +388,7 @@ a {
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
+    width: 80%;
   }
 
   .imageOnCard{
