@@ -1,304 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Rafa Linares Molina - Fullstack</title>
-  </head>
-  <body>
-    <div class="ideGlobal">
-      <!-- left menu & directory tree -->
-      <div class="sidebar">
-        <div class="menu">
-          <!-- upper menu -->
-          <div class="top">
-            <i class="menuItem menuItemActive far fa-copy"></i>
-            <a href="https://es.linkedin.com/in/rafael-ivan-linares-molina" target="_blank"
-              ><i class="menuItem fas fa-search tooltip">
-                <span class="tooltiptext sansSerifFont">
-                  Find me on LinkedIn</span
-                ></i
-              >
-            </a>
-            <a href="https://github.com/" target="_blank"
-              ><i class="menuItem fas fa-code-branch tooltip">
-                <span class="tooltiptext sansSerifFont">
-                  Watch a bit of code</span
-                ></i
-              ></a
-            >
-          </div>
 
-          <!-- bottom menu -->
-          <div class="bottom">
-            <i class="menuItem toBottom fas fa-cog tooltip">
-              <span class="tooltiptext sansSerifFont"> Toogle theme </span></i
-            >
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Rafa Linares Molina - Fullstack</title>
+</head>
+
+<body>
+  <div class="ideGlobal">
+    <!-- left menu & directory tree -->
+    <div class="sidebar">
+      <div class="menu">
+        <!-- upper menu -->
+        <div class="top">
+          <i class="menuItem menuItemActive far fa-copy"></i>
+          <a href="https://es.linkedin.com/in/rafael-ivan-linares-molina" target="_blank"><i
+              class="menuItem fas fa-search tooltip">
+              <span class="tooltiptext sansSerifFont">
+                Find me on LinkedIn</span></i>
+          </a>
+          <a href="https://github.com/" target="_blank"><i class="menuItem fas fa-code-branch tooltip">
+              <span class="tooltiptext sansSerifFont">
+                Watch a bit of code</span></i></a>
         </div>
 
-        <!-- directory tree -->
-        <div class="parentDir">
-          <i class="dirTitle fas fa-chevron-down">
-            <span class="sansSerifFont">PERSONALPAGE</span></i
-          >
-          <div class="documentsTree">
-            <i class="fas fa-chevron-down">
-              <i class="far fa-folder-open">
-                <span class="sansSerifFont">project</span>
-              </i>
-            </i>
-
-            <div class="childDir">
-              <div
-                id="fileHome"
-                class="item treeLine treeLineActive"
-                onclick="showPage('home')"
-              >
-                <i class="fab fa-markdown">
-                  <span class="sansSerifFont"> home.md</span></i
-                >
-              </div>
-
-              <div id="fileBio" class="item treeLine" onclick="showPage('bio')">
-                <i class="fab fa-markdown">
-                  <span class="sansSerifFont">bio.md</span></i
-                >
-              </div>
-
-              <div
-                id="fileContact"
-                class="item treeLine"
-                onclick="showPage('contact')"
-              >
-                <i class="fab fa-markdown">
-                  <span class="sansSerifFont">contact.md</span></i
-                >
-              </div>
-            </div>
-          </div>
+        <!-- bottom menu -->
+        <div class="bottom">
+          <i class="menuItem toBottom fas fa-cog tooltip">
+            <span class="tooltiptext sansSerifFont"> Toogle theme </span></i>
         </div>
       </div>
-      <!-- content or open files -->
-      <div class="openFiles">
-        <div class="tabs">
-          <div id="tabHome" class="page pageActive" onclick="showPage('home')">
-            <i class="fab fa-markdown">
-              <span class="sansSerifFont"> home</span></i
-            >
-          </div>
-          <div id="tabBio" class="page" onclick="showPage('bio')">
-            <i class="fab fa-markdown">
-              <span class="sansSerifFont"> bio</span></i
-            >
-          </div>
-          <div id="tabContact" class="page" onclick="showPage('contact')">
-            <i class="fab fa-markdown">
-              <span class="sansSerifFont"> contact</span></i
-            >
-          </div>
-        </div>
 
-        <!-- HOME CONTENT -->
-        <div id="pageHome" class="files">
-          <h1>OMG It Worked! I mean... Home page.</h1>
-          
-          <!-- Quote 1 -->
-          <div class="quote">
-            <div class="quoteItself">
-              “Java is to JavaScript what car is to Carpet.”
-            </div>
-            <div class="quotePerson">– Chris Heilmann</div>
-          </div>
-          <!-- /Quote -->
-          <div class="whoIAm bg1">
-            <div class="imgOfMyself">
-              <img src="img/myself.jpg" alt="Myself as wizard" />
-            </div>
-            <div class="textAboutMyself">
-              Hi, my name is <b>Rafa Linares Molina</b> and I love everything
-              about new technologies and how the stuff works. Since i was very
-              young I can remember tearing apart all the electronics my hands
-              could grab to check the internals. But after breaking more stuff
-              than ever repaired I decided to start my career as full stack
-              developer.
-              <br />
-              I played with few tecnologies in the past:
-              <ul>
-                <li>HTML5 & CSS3</li>
-                <li>NODE js</li>
-                <ul>
-                  <li>express</li>
-                </ul>
-                <li>Java</li>
-                <ul>
-                  <li>spring boot (a long time ago)</li>
-                </ul>
-                <li>Native Android</li>
-                <ul>
-                  <li>working with bluetooth beacons</li>
-                </ul>
-                <li>Python (barely)</li>
-                <li>Angular (ver 1, a long time ago, in a galaxy far away)</li>
-                <li>Data Bases</li>
-                <ul>
-                  <li>Design of relational databases</li>
-                  <li>SQL: MySQL, Oracle SQL Server, Microsoft SQL Server</li>
-                </ul>
-                <li>Versioning</li>
-                <ul>
-                  <li>Git (and GitFlow)</li>
-                  <li>Subversion</li>
-                  <li>Clearcase (never more)</li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-          <!-- Quote -->
-          <div class="quote">
-            <div class="quoteItself">
-              “Any fool can write code that a computer can understand. Good
-              programmers write code that humans can understand.”
-            </div>
-            <div class="quotePerson">– Martin Fowler</div>
-          </div>
-          <!-- /Quote -->
-          <div class="whoIAm bg2">
-            <div class="imgOfMyself">
-              <img src="img/rbp4.jpg" alt="Myself as wizard" />
-            </div>
-            <div class="textAboutMyself">
-              But with developing software came the responsability to mantain
-              it. I am a enthusiast of agile philosophy and SCRUM framework. For
-              me is one of the fundamentals nowdays to produce a quality
-              product.
-              <br />
-              Things i plan to improve:
-              <ul>
-                <li>Cloud services</li>
-                <ul>
-                  <li>I recently worked with Azure and a bit with aws</li>
-                </ul>
-                <li>Better understanding of SCRUM</li>
-                <li>Better practices when working on projects</li>
-                <ul>
-                  <li>Clean code</li>
-                </ul>
-                <li>Testing (and more testing)</li>
-                <li>
-                  Pair programming (two people catch bugs fastest than one)
-                </li>
-                <li>FrontEnd</li>
-                <ul>
-                  <li>React, React native</li>
-                  <li>Angular (wich version you say they are now?)</li>
-                </ul>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <!-- directory tree -->
+      <div class="parentDir">
+        <i class="dirTitle fas fa-chevron-down">
+          <span class="sansSerifFont">PERSONALPAGE</span></i>
+        <div class="documentsTree">
+          <i class="fas fa-chevron-down">
+            <i class="far fa-folder-open">
+              <span class="sansSerifFont">project</span>
+            </i>
+          </i>
 
-        <!-- BIO CONTENT -->
-        <div id="pageBio" class="files">
-          <h1>Let me introduce myself...</h1>
+          <div class="childDir">
+            <div id="fileHome" class="item treeLine treeLineActive" onclick="showPage('home')">
+              <i class="fab fa-markdown">
+                <span class="sansSerifFont"> home.md</span></i>
+            </div>
 
-          <!-- Quote -->
-          <div class="quote">
-            <div class="quoteItself">
-              “Experience is the name everyone gives to their mistakes.”
+            <div id="fileBio" class="item treeLine" onclick="showPage('bio')">
+              <i class="fab fa-markdown">
+                <span class="sansSerifFont">curriculum.md</span></i>
             </div>
-            <div class="quotePerson">– Oscar Wilde</div>
-          </div>
-          <!-- /Quote -->
-          <div class="whoIAm bg2">
-            <div class="imgOfMyself">
-              <img src="img/myself2.jpg" alt="Myself as wizard" />
-            </div>
-            <div class="textAboutMyself">
-              Well, here we are. Now I supose I could talk about my whereabouts
-              in life...
-              <br />
-              <ul>
-                <li>
-                  I am from Valencia, I was born around the 90's (I am almost
-                  older than the internet)
-                </li>
-                <li>
-                  I am a person with quite a few interest regarding any
-                  technological issue. I try to follow the news, stay in touch
-                  with cybersecurity (as an amateur) and in my spare time I rarely refuse a beer with
-                  my friends, or boardgames.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <!-- CONTACT CONTENT -->
-        <div id="pageContact" class="files">
-          <h1>Contact me!</h1>
-
-          <!-- Quote -->
-          <div class="quote">
-            <div class="quoteItself">
-              “Simplicity is the soul of efficiency.”
-            </div>
-            <div class="quotePerson">– Austin Freeman</div>
-          </div>
-          <!-- /Quote -->
-
-          <div class="whoIAm bg2">
-            <div class="imgOfMyself">
-              <img src="img/myself3.jpg" alt="Myself as wizard" />
-            </div>
-            <div class="textAboutMyself">
-              Just call me and give me a job!
-              <br />
-              Contact me throug:
-              <ul class="contactInfo">
-                <li>
-                  <a href="">
-                    <i class="fas fa-mobile-alt"
-                      ><span class="sansSerifFont"> 666 666 666</span>
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <i class="fas fa-envelope sansSerifFont"
-                      ><span class="sansSerifFont"> someMail@gmail.com</span>
-                    </i></a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://es.linkedin.com/in/rafael-ivan-linares-molina"
-                    ><i class="fab fa-linkedin sansSerifFont"
-                      ><span class="sansSerifFont"> LikedIn</span>
-                    </i></a
-                  >
-                </li>
-                <li>
-                  <a href="https://github.com/RafaLinaresMolina"
-                    ><i class="fab fa-github-alt sansSerifFont"
-                      ><span class="sansSerifFont"> GitHub</span>
-                    </i></a
-                  >
-                </li>
-              </ul>
+            <div id="fileContact" class="item treeLine" onclick="showPage('contact')">
+              <i class="fab fa-markdown">
+                <span class="sansSerifFont">contact.md</span></i>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer"></div>
+    <!-- content or open files -->
+    <div class="openFiles">
+      <div class="tabs">
+        <div id="tabHome" class="page pageActive" onclick="showPage('home')">
+          <i class="fab fa-markdown">
+            <span class="sansSerifFont"> home</span></i>
+        </div>
+        <div id="tabBio" class="page" onclick="showPage('bio')">
+          <i class="fab fa-markdown">
+            <span class="sansSerifFont"> curriculum</span></i>
+        </div>
+        <div id="tabContact" class="page" onclick="showPage('contact')">
+          <i class="fab fa-markdown">
+            <span class="sansSerifFont"> contact</span></i>
+        </div>
+      </div>
 
-    <!-- Javascript -->
-    <script
-      src="https://kit.fontawesome.com/4512bfa85c.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/app.js"></script>
-  </body>
+      <!-- HOME CONTENT -->
+      <div id="pageHome" class="files">
+        <h1>OMG It Worked! I mean... Home page.</h1>
+
+        <!-- Quote 1 -->
+        <div class="quote">
+          <div class="quoteItself">
+            “Java is to JavaScript what car is to Carpet.”
+          </div>
+          <div class="quotePerson">– Chris Heilmann</div>
+        </div>
+        <!-- /Quote -->
+
+        <div class="infoCard bg1">
+          <div class="imageOnCard">
+            <img src="img/myself.jpg" alt="Myself as wizard" />
+          </div>
+          <div class="cardText">
+            Well, here we are. Now I supose I could talk about my whereabouts
+            in life...
+            
+            <br />
+            <ul>
+              <li>
+                Hi, my name is <b>Rafa Linares Molina</b> and as you can see I am a 
+                <s>Wizard</s> FullStack developer. 
+              </li>
+              <li>
+                I am from Valencia, I was born around the 90's (I am almost
+                older than the internet)
+              </li>
+              <li>
+                Since i was very
+                young I can remember tearing apart all the electronics my hands
+                could grab to check the internals. But after breaking more stuff
+                than ever repaired I decided to start my career as full stack
+                developer (you can't over power the code and stuff like that...).
+              </li>
+              <li>
+                As in my spare time, I am a person with quite a few interest regarding any
+                technological issue, like cybersecurity (as a hobby, nothing serious), IoT, and Linux en general. 
+              </li>
+              <li>
+                But not all in life is work, I rarely refuse a beer with my friends, or boardgames night, chill listening music.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROFILE CONTENT -->
+      <div id="pageBio" class="files">
+        <h1>The road so far...</h1>
+
+        <!-- Quote -->
+        <div class="quote">
+          <div class="quoteItself">
+            “Experience is the name everyone gives to their mistakes.”
+          </div>
+          <div class="quotePerson">– Oscar Wilde</div>
+        </div>
+        <!-- /Quote -->
+
+        <div class="infoCard bg2">
+          <div class="imageOnCard">
+            <img src="img/logos/mytra.png" alt="Myself as wizard" />
+          </div>
+          <div class="cardText">
+            <h3><a href="https://www.mytra.es/" target="_blank">Mytra Control S.L.</a></h3>
+            In this particular place I worked for two years as:
+            <ul>
+              <li>Backend developer with nodejs</li>
+              <li>Android developer with native android for smartwatches</li>
+              <li>Started the adventure of cloud with azure and aws</li>
+              <li>Being an active part of a SCRUM team</li>
+            </ul>
+
+            while also:
+            <ul>
+              <li>
+                Improved a lot of stuff about agile philosophy and SCRUM
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote">
+          <div class="quoteItself">
+            “Simplicity is the soul of efficiency.”
+          </div>
+          <div class="quotePerson">– Austin Freeman</div>
+        </div>
+        <!-- /Quote -->
+
+        <div class="infoCard bg2">
+          <div class="imageOnCard">
+            <img src="img/logos/srg.jpg" alt="Myself as wizard" />
+          </div>
+          <div class="cardText">
+            <h3><a href="https://www.srgglobal.com/" target="_blank">SRG Global Lliria</a></h3>
+            Working as an external consultant for a whole year my tasks where:
+            <ul>
+              <li>Learned how to really do SCRUM</li>
+              <li>The importance of the well use of Git and Gitflow</li>
+              <li>Improved my skills with Microsoft SQL Server</li>
+              <li>worked with delphi on legacy code</li>
+            </ul>
+            And this experience helped myself to improve myself as a profesial
+            and to not be scared of legacy code.
+          </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote">
+          <div class="quoteItself">
+            “Any fool can write code that a computer can understand. Good
+            programmers write code that humans can understand.”
+          </div>
+          <div class="quotePerson">– Martin Fowler</div>
+        </div>
+        <!-- /Quote -->
+
+        <div class="infoCard bg2">
+          <div class="imageOnCard">
+            <img src="img/logos/capgemini.png" alt="Myself as wizard" />
+          </div>
+          <div class="cardText">
+            <h3><a href="https://www.capgemini.com/es-es/" target="_blank">Capgemini</a></h3>
+            Working as Junior Consultant for two year I worked and learned:
+            <ul>
+              <li>How to work with SCRUM</li>
+              <li>
+                The importance of the correct communication with my team
+              </li>
+              <li>Improved my skills with Oracle SQL Server</li>
+              <li>
+                The needing of test the code for avoiding future errors and
+                have more control of the workflow
+              </li>
+              <li>Worked with C on batch scripts</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote">
+          <div class="quoteItself">
+            “Talk is cheap. Show me the code.”
+          </div>
+          <div class="quotePerson">- Linus Torvalds </div>
+        </div>
+        <!-- /Quote -->
+
+        <div class="infoCard bg2">
+          <div class="imageOnCard">
+            <img src="img/logos/gnommo.jpg" alt="Myself as wizard" />
+          </div>
+          <div class="cardText">
+            <h3><a href="https://twitter.com/gnommostudios?lang=es" target="_blank">Gnommostudios S.L</a></h3>
+            As my first job:
+            <ul>
+              <li>I learned how to give presentations for clients</li>
+              <li>
+                Improved my knowledge of android studio and android apps
+              </li>
+              <li>Improved my skills with MySQL Server</li>
+              <li>The importance of a well organized schedule work</li>
+              <li>start knowing nodejs and Angular</li>
+            </ul>
+            And I have a very good memories from the Gnommostudios team.
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT CONTENT -->
+      <div id="pageContact" class="files">
+        <h1>Contact me!</h1>
+
+        <!-- Quote -->
+        <div class="quote">
+          <div class="quoteItself">
+            “Simplicity is the soul of efficiency.”
+          </div>
+          <div class="quotePerson">– Austin Freeman</div>
+        </div>
+        <!-- /Quote -->
+
+        <div class="infoCard bg2">
+          <div class="imageOnCard">
+            <img src="img/myself3.jpg" alt="Myself as wizard" />
+          </div>
+          <div class="cardText">
+            Just call me and give me a job!
+            <br />
+            Contact me throug:
+            <ul class="contactInfo">
+              <li>
+                <a href="">
+                  <i class="fas fa-mobile-alt"><span class="sansSerifFont"> 666 666 666</span>
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <i class="fas fa-envelope sansSerifFont"><span class="sansSerifFont"> someMail@gmail.com</span>
+                  </i></a>
+              </li>
+              <li>
+                <a href="https://es.linkedin.com/in/rafael-ivan-linares-molina"><i
+                    class="fab fa-linkedin sansSerifFont"><span class="sansSerifFont"> LikedIn</span>
+                  </i></a>
+              </li>
+              <li>
+                <a href="https://github.com/RafaLinaresMolina"><i class="fab fa-github-alt sansSerifFont"><span
+                      class="sansSerifFont"> GitHub</span>
+                  </i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+
+  <!-- Javascript -->
+  <script src="https://kit.fontawesome.com/4512bfa85c.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

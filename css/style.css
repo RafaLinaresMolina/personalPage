@@ -196,7 +196,7 @@ body {
   scrollbar-width: thin;
 }
 
-.whoIAm {
+.infoCard {
   border-radius: 0.7em;
   display: flex;
   flex-flow: row;
@@ -218,14 +218,14 @@ body {
   background-size: cover;
 }
 
-.whoIAm img {
+.infoCard img {
   display: flex;
   height: 15em;
   border-radius: 50%;
   border: 6px outset #1c6ea4;
 }
 
-.textAboutMyself {
+.cardText {
   margin-left: 2em;
   justify-items: center;
   background-color: rgba(49, 49, 49, 0.8);
@@ -309,6 +309,15 @@ h1 {
   border: 0.15em solid;
 }
 
+img {
+  background-color: whitesmoke;
+}
+
+h3 a{
+  color:whitesmoke;
+  cursor: pointer;
+}
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -322,20 +331,20 @@ a {
 }
 
 @media only screen and (max-width: 1120px) {
-  .whoIAm {
+  .infoCard {
     display: flex;
     flex-flow: column;
   }
 
-  .textAboutMyself{
+  .cardText{
     margin-left: 0em;
   }
 
-  .imgOfMyself{
+  .imageOnCard{
     margin-left: 0em;
   }
 
-  .whoIAm img {
+  .infoCard img {
     margin-bottom: 2em;
   }
 }
@@ -349,40 +358,40 @@ a {
     margin-left: 3.2em;
   }
 
-  .whoIAm{
+  .infoCard{
     margin-left: 0em;
     padding-left: 0em;
   }
 
-  .textAboutMyself{
+  .cardText{
     margin-left: 2em;
     margin-bottom: 0em;
   }
 
-  .imgOfMyself{
+  .imageOnCard{
     margin-left: 2em;
   }
 }
 
 @media only screen and (max-width: 500px) {
 
-  .whoIAm{
+  .infoCard{
     margin-left: 0em;
     padding: 0em;
   }
 
-  .textAboutMyself{
+  .cardText{
     margin-left: 0.5em;
     margin-right: 0.5em;
     margin-bottom: 0.5em;
   }
 
-  .imgOfMyself{
+  .imageOnCard{
     margin-left: 0.5em;
     margin-right: 0.5em;
   }
 
-  .whoIAm img {
+  .infoCard img {
     height: 10em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
