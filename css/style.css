@@ -231,6 +231,7 @@ body {
   background-color: rgba(49, 49, 49, 0.8);
   border-radius: 0.7em;
   padding: 2em;
+  text-shadow: -0.1em 0 black, 0 0.1em black, 0.1em 0 black, 0 -0.1em black;
 }
 
 .quote {
@@ -242,6 +243,7 @@ body {
   flex-flow: column;
   width: auto;
   margin: 2em;
+  text-shadow: -0.1em 0 black, 0 0.1em black, 0.1em 0 black, 0 -0.1em black;
 }
 
 .quoteItself {
