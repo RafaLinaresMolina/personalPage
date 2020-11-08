@@ -11,6 +11,7 @@ body {
   height: 100%;
   margin-right: 30em;
   z-index: 2;
+  user-select: none;
 }
 
 .ideGlobal {
@@ -32,6 +33,7 @@ body {
   width: 3.2em;
   height: 100%;
   background-color: rgb(61, 61, 61);
+  user-select: none;
 }
 
 .parentDir {
@@ -56,6 +58,7 @@ body {
   width: 100%;
   background-color: rgb(32, 32, 32);
   z-index: 1;
+  user-select: none;
 }
 
 .tabs {
