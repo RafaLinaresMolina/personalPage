@@ -5,6 +5,7 @@ body {
 }
 
 .footerText{
+  user-select: none;
   font-weight: lighter;
 }
 
